@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingBottom="60dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menuDetailsFragment">
+
+     <ImageView
+       android:id="@+id/menuImageView"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+       android:src="@drawable/menu_img"
+       android:scaleType="centerCrop"/>
+
+
+        <TextView
+        android:id="@+id/menuitelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Westway"
+        android:textSize="30sp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#373737"
+        app:layout_constraintTop_toBottomOf="@id/menuImageView"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More info"
+        app:layout_constraintTop_toTopOf="@id/menuitelTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/menuitelTextView"
+        android:textColor="#FF7000"
+        android:textSize="14sp"/>
+
+
+    <ImageView
+        android:id="@+id/startImgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_star"
+        app:layout_constraintStart_toStartOf="@id/menuitelTextView"
+        app:layout_constraintTop_toBottomOf="@id/menuitelTextView"
+        android:padding="6dp"/>
+
+    <TextView
+        android:id="@+id/rateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.6 • "
+        android:textSize="12sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/startImgView"
+        app:layout_constraintStart_toEndOf="@id/startImgView"
+        app:layout_constraintTop_toTopOf="@id/startImgView" />
+
+
+    <ImageView
+        android:id="@+id/watchImgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:src="@drawable/ic_watch"
+        app:layout_constraintBottom_toBottomOf="@+id/rateTextView"
+        app:layout_constraintStart_toEndOf="@id/rateTextView"
+        app:layout_constraintTop_toTopOf="@id/rateTextView" />
+
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 Min"
+        android:layout_marginRight="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/watchImgView"
+        app:layout_constraintStart_toEndOf="@id/watchImgView"
+        app:layout_constraintTop_toTopOf="@id/watchImgView" />
+
+
+
+    <TextView
+        android:id="@+id/desTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/startImgView"
+        android:text="Healthy eating means eating a variety of foods that give you the nutrients you need to maintain your health, feel good, and have energy."
+        android:textSize="15sp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#838383"/>
+
+    <TextView
+        android:id="@+id/foodShowTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/desTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Westway Food Menu"
+        android:textColor="#373737"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:layout_marginLeft="30sp"/>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/menutabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabBackground="@drawable/tab_bg"
+        android:layout_marginLeft="30dp"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicatorColor="@android:color/transparent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/foodShowTextView">
+
+
+
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Best seller" />
+
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Vag" />
+
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Non Vag" />
+
+    <com.google.android.material.tabs.TabItem
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bevarage"/>
+    </com.google.android.material.tabs.TabLayout>
+
+    <TextView
+        android:id="@+id/sellerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best sellers"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintStart_toStartOf="@id/menutabLayout"
+        app:layout_constraintTop_toBottomOf="@id/menutabLayout"
+        android:textColor="@color/customcolor"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sellerrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/sellerTextView"/>
+
+ <ImageView
+     android:id="@+id/backimageView"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@drawable/ic_back"
+     android:padding="15dp"
+     android:layout_marginLeft="20dp"
+     android:layout_marginTop="40dp"
+     app:layout_constraintStart_toStartOf="@+id/menuImageView"
+     android:background="@drawable/back_custom_backgd"
+     app:layout_constraintTop_toTopOf="@+id/menuImageView"
+  />
+
+
+ <ImageView
+  android:id="@+id/likeImgView"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+  app:layout_constraintTop_toTopOf="@id/backimageView"
+  android:src="@drawable/ic_dislike"
+  android:padding="15dp"
+     android:layout_marginRight="10dp"
+   app:layout_constraintStart_toEndOf="@id/backimageView"
+  android:background="@drawable/back_custom_backgd"
+  app:layout_constraintBottom_toBottomOf="@id/backimageView"
+  app:layout_constraintEnd_toEndOf="@id/menuImageView"/>
+
+
+ <ImageView
+     android:id="@+id/shareImgView"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:background="@drawable/back_custom_backgd"
+     android:padding="15dp"
+     android:src="@drawable/ic_share"
+       android:layout_marginLeft="10dp"
+     android:layout_marginRight="20dp"
+       app:layout_constraintStart_toEndOf="@id/likeImgView"
+     app:layout_constraintBottom_toBottomOf="@+id/likeImgView"
+     app:layout_constraintEnd_toEndOf="@id/menuImageView"
+     app:layout_constraintTop_toTopOf="@+id/likeImgView" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
