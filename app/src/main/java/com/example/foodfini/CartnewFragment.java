@@ -1,6 +1,8 @@
 package com.example.foodfini;
 
 import android.app.AlertDialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -50,7 +52,9 @@ public class CartnewFragment extends Fragment {
                   AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
                   AlertDialog alertDialog  =  builder.create();
                   View view1 = LayoutInflater.from(getContext()).inflate(R.layout.success__custom_layout,null,false);
-                  oderTexView =view1.findViewById(R.id.textViewOrder);
+                  alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+                  oderTexView =view1.findViewById(R.id.trackTextView);
 
                    alertDialog.setView(view1);
 

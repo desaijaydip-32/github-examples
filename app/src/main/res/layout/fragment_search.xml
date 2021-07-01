@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView android:layout_width="match_parent"
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="70dp"
-    android:fillViewport="true"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SearchFragment">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".SearchFragment">
 
         <ImageView
             android:layout_width="match_parent"
@@ -32,7 +28,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:drawableLeft="@drawable/ic_search"
-            android:background="@drawable/back_custom_backgd"
+            android:background="@drawable/newcustome_background"
             android:layout_marginTop="50dp"
             app:layout_constraintTop_toTopOf="@+id/imgHome"
             app:layout_constraintEnd_toEndOf="@id/imgHome"
@@ -41,131 +37,151 @@
 
 
 
-        <ImageView
-            android:id="@+id/locationImg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_location"
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            android:layout_marginBottom="70dp"
             app:layout_constraintTop_toBottomOf="@id/imgHome"
-            android:layout_marginLeft="20sp"
-            android:padding="10dp"
-            android:layout_marginBottom="20dp"
-            app:layout_constraintStart_toStartOf="parent"/>
-
-        <TextView
-            android:id="@+id/homeTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Home"
-            android:textSize="15sp"
-            app:layout_constraintStart_toEndOf="@id/locationImg"
-            app:layout_constraintTop_toTopOf="@id/locationImg"/>
-
-        <TextView
-            android:id="@+id/locationTextView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="242 ST Marks Eve, Finland"
-            android:textSize="16sp"
-            app:layout_constraintTop_toBottomOf="@id/homeTextView"
-            app:layout_constraintStart_toStartOf="@id/homeTextView"
-            />
-
-        <ImageView
-            android:id="@+id/settingImgView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/homeTextView"
-            android:padding="10dp"
-            android:layout_marginRight="10dp"
-            app:layout_constraintBottom_toBottomOf="@id/locationTextView"
-            android:src="@drawable/ic_setting"/>
-
-
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:tabBackground="@drawable/tab_bg"
-            android:layout_marginLeft="10dp"
-            android:paddingTop="10dp"
-            app:tabIconTint="@color/selector_tab"
-            app:tabSelectedTextColor="@color/customcolor"
-            app:tabIndicatorColor="@android:color/transparent"
-            android:layout_marginTop="5dp"
-            app:layout_constraintTop_toBottomOf="@id/locationTextView">
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:icon="@drawable/ic_fast_food"
-                android:text="All" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:icon="@drawable/ic_ion_pizza"
-                android:text="Pizza" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:icon="@drawable/ic_vector"
-                android:text="Beverages" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:icon="@drawable/ic_asian"
-                android:text="asian" />
-
-
-        </com.google.android.material.tabs.TabLayout>
-
-        <TextView
-            android:id="@+id/nearResturentTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/tabLayout"
-            android:text="Nearest Restaurents"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:paddingBottom="10sp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/restorrent1RecyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintTop_toBottomOf="@+id/nearResturentTextView"/>
-
-
-        <TextView
-            android:id="@+id/populerResturentTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/restorrent1RecyclerView"
-            android:text="Nearest Popular Restaurents"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:paddingBottom="10sp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="20dp"/>
-
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/populerrestorrent1RecyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintTop_toBottomOf="@+id/populerResturentTextView"/>
+            app:layout_constraintBottom_toBottomOf="parent">
 
 
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/locationImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_location"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginLeft="20sp"
+                    android:padding="10dp"
+                    android:layout_marginBottom="20dp"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/homeTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@id/locationImg"
+                    app:layout_constraintTop_toTopOf="@id/locationImg"/>
+
+                <TextView
+                    android:id="@+id/locationTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="242 ST Marks Eve, Finland"
+                    android:textSize="16sp"
+                    app:layout_constraintTop_toBottomOf="@id/homeTextView"
+                    app:layout_constraintStart_toStartOf="@id/homeTextView"
+                    />
+
+                <ImageView
+                    android:id="@+id/settingImgView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/homeTextView"
+                    android:padding="10dp"
+                    android:layout_marginRight="10dp"
+                    app:layout_constraintBottom_toBottomOf="@id/locationTextView"
+                    android:src="@drawable/ic_setting"/>
+
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabBackground="@drawable/tab_bg"
+                    android:layout_marginLeft="10dp"
+                    android:paddingTop="10dp"
+                    app:tabIconTint="@color/selector_tab"
+                    app:tabSelectedTextColor="@color/customcolor"
+                    app:tabIndicatorColor="@android:color/transparent"
+                    android:layout_marginTop="5dp"
+                    app:layout_constraintTop_toBottomOf="@id/locationTextView">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:icon="@drawable/ic_fast_food"
+                        android:text="All" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:icon="@drawable/ic_ion_pizza"
+                        android:text="Pizza" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:icon="@drawable/ic_vector"
+                        android:text="Beverages" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:icon="@drawable/ic_asian"
+                        android:text="asian"/>
+
+
+                </com.google.android.material.tabs.TabLayout>
+
+                <TextView
+                    android:id="@+id/nearResturentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/tabLayout"
+                    android:text="Nearest Restaurents"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="10sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/restorrent1RecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nearResturentTextView"/>
+
+
+                <TextView
+                    android:id="@+id/populerResturentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/restorrent1RecyclerView"
+                    android:text="Nearest Popular Restaurents"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="10sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/populerrestorrent1RecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintTop_toBottomOf="@+id/populerResturentTextView"/>
 
 
 
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
 
 
 
@@ -174,4 +190,3 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</ScrollView>

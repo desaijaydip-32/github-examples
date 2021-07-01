@@ -58,22 +58,22 @@ public class MenuResFragment extends Fragment {
          public void onClick(View v) {
              AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
              AlertDialog alertDialog  =  builder.create();
-             View view1 = getLayoutInflater().inflate(R.layout.demo,null);
+             View view1 = getLayoutInflater().inflate(R.layout.dummy,null);
 
              alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
-            // checkview=view1.findViewById(R.id.backgroundimg);
+             checkview=view1.findViewById(R.id.orderTextView);
 
-             alertDialog.setView(view1);
+              alertDialog.setView(view1);
 
-//                 checkview.setOnClickListener(new View.OnClickListener() {
-//                     @Override
-//                     public void onClick(View v) {
-//                         FragmentManager manager = getFragmentManager();
-//                         manager.beginTransaction().replace(R.id.container, new CartnewFragment()).commit();
-//                        alertDialog.dismiss();
-//                     }
-//                 });
+                 checkview.setOnClickListener(new View.OnClickListener() {
+                     @Override
+                     public void onClick(View v) {
+                         FragmentManager manager = getFragmentManager();
+                         manager.beginTransaction().replace(R.id.container, new CartnewFragment()).commit();
+                        alertDialog.dismiss();
+                     }
+                 });
              alertDialog.show();
 
          }

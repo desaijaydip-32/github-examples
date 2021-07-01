@@ -40,8 +40,8 @@ public class HomeFragment extends Fragment {
         View view= inflater.inflate(R.layout.fragment_home, container, false);
 
 
-        nrecyclerView= view.findViewById(R.id.restorrentRecyclerView);
-        precyclerView1= view.findViewById(R.id.populerrestorrentRecyclerView);
+        nrecyclerView= view.findViewById(R.id.restorrent1RecyclerView);
+        precyclerView1= view.findViewById(R.id.populerrestorrent1RecyclerView);
 
 
 

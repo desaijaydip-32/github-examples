@@ -14,4 +14,6 @@
 
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="discount">Discount</string>
+    <string name="westwaytextname">Westway</string>
+    <string name="_15_mintextname">15 Min</string>
 </resources>

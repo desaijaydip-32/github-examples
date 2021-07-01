@@ -22,11 +22,20 @@
     <style name="Theme.FoodFini.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.FoodFini.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-    
-    
+
+
     <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
         <item name="tabBackground">@drawable/tab_bg</item>
     </style>
 
+    <style name="TabLayout_Theme" parent="@style/TabLayout_Theme" tools:ignore="ResourceCycle">
+
+    </style>
+
+    <style name="CustomTextAppearanceTab" parent="TextAppearance.Design.Tab">
+
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+    </style>
 
 </resources>
