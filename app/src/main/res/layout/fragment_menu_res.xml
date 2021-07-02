@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:paddingBottom="60dp"
-    tools:context=".MenuResFragment">
+    android:paddingBottom="60dp">
 
     <ImageView
         android:id="@+id/imageView31"
@@ -58,9 +57,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
         android:layout_marginLeft="20sp"
+       app:tabMode="scrollable"
 
-        app:tabMode="auto"
-
+        app:tabMinWidth="0dp"
         app:tabUnboundedRipple="true"
         app:tabSelectedTextColor="@color/white"
         app:tabIndicatorColor="@android:color/transparent"
@@ -114,7 +113,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
-
         android:src="@drawable/menu_back_rectangle"
         app:layout_constraintBottom_toBottomOf="parent" />
 
