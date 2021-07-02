@@ -1,4 +1,4 @@
-package com.example.foodfini;
+package com.example.foodfini.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.foodfini.R;
 
 public class menuAdapter extends  RecyclerView.Adapter<menuAdapter.MyViewHolder> {
 

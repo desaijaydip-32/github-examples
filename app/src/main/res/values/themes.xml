@@ -36,6 +36,7 @@
 
         <item name="android:textAllCaps">false</item>
         <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#D6CCCC</item>
     </style>
 
 </resources>

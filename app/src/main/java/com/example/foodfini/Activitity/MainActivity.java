@@ -1,4 +1,4 @@
-package com.example.foodfini;
+package com.example.foodfini.Activitity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,11 @@ import androidx.fragment.app.Fragment;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+
+import com.example.foodfini.Fragment.HomeFragment;
+import com.example.foodfini.Fragment.MenuResFragment;
+import com.example.foodfini.R;
+import com.example.foodfini.Fragment.SearchFragment;
 
 import com.example.foodfini.databinding.ActivityMainBinding;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -39,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                   }
 
                   getSupportFragmentManager().beginTransaction().replace(R.id.container,temp ).addToBackStack(null).commit();
-                return true;
+                   return true;
             }
         });
     }

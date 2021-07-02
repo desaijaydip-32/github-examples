@@ -1,4 +1,4 @@
-package com.example.foodfini;
+package com.example.foodfini.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,9 @@ import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.foodfini.Model.CartItemModel;
+import com.example.foodfini.R;
 
 import java.util.ArrayList;
 

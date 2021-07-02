@@ -1,4 +1,4 @@
-package com.example.foodfini;
+package com.example.foodfini.Model;
 
 public class CartItemModel {
 

@@ -1,4 +1,4 @@
-package com.example.foodfini;
+package com.example.foodfini.Fragment;
 
 import android.app.AlertDialog;
 import android.graphics.Color;
@@ -12,8 +12,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.foodfini.Model.CartItemModel;
+import com.example.foodfini.Adapter.CartItemViewAdapter;
+import com.example.foodfini.R;
 
 import java.util.ArrayList;
 

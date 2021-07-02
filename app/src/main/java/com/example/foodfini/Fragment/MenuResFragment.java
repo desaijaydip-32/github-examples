@@ -1,12 +1,10 @@
-package com.example.foodfini;
+package com.example.foodfini.Fragment;
 
 import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -18,6 +16,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
+import com.example.foodfini.Adapter.CartAdapter;
+import com.example.foodfini.Fragment.CartnewFragment;
+import com.example.foodfini.Model.MenuModel;
+import com.example.foodfini.R;
 
 import java.util.ArrayList;
 

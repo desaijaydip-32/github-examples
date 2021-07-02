@@ -1,9 +1,11 @@
-package com.example.foodfini;
+package com.example.foodfini.Activitity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+
+import com.example.foodfini.R;
 
 import java.util.Timer;
 import java.util.TimerTask;
