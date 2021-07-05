@@ -48,7 +48,7 @@ public class menuDetailsFragment extends Fragment {
         itemnameTextView=view.findViewById(R.id.menuitelTextView);
 
         sellerRecycclerview = view.findViewById(R.id.sellerrecyclerview);
-        imageView.setImageResource(img);
+        imageView.setImageResource(R.drawable.menudetails_img) ;
         itemnameTextView.setText(name);
 
 

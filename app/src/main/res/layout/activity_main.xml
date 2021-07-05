@@ -4,6 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#E5E5E5"
         tools:context=".Activitity.MainActivity">
 
     <FrameLayout
@@ -18,11 +19,15 @@
         android:id="@+id/bottomView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
+        android:background="#FFFFFF"
+        android:paddingTop="25dp"
+        android:paddingBottom="15dp"
+         app:itemIconTint="@color/selector_tab"
         app:labelVisibilityMode="unlabeled"
         app:itemBackground="@drawable/bottom_selector"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/menuitem"
+
 
         />
 

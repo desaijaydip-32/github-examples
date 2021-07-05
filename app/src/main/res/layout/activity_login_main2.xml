@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    tools:context=".Activitity.RegisterMainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/loginimg_back"
+        android:background="@drawable/ic_vector_loginimg"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+                android:id="@+id/googleimageView6"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:src="@drawable/ic_flat_color_icons_google__1_"
+
+                android:layout_marginRight="10dp"
+
+                app:layout_constraintBottom_toTopOf="@+id/logintextview"
+                android:background="@drawable/back__customgoogle"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintRight_toLeftOf="@id/fbimageView6"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/fbimageView6"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_facebook"
+                android:background="@drawable/back__customgoogle"
+                app:layout_constraintLeft_toRightOf="@+id/googleimageView6"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                />
+
+            <TextView
+                android:id="@+id/logintextview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="or Login with Email"
+                android:layout_marginTop="8sp"
+                app:layout_constraintStart_toStartOf="@+id/googleimageView6"
+                app:layout_constraintTop_toBottomOf="@id/googleimageView6"
+                app:layout_constraintEnd_toEndOf="@id/fbimageView6"/>
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/textcolors"
+                android:layout_marginLeft="41sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/logintextview" />
+
+
+
+
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6sp"
+                android:inputType="textPersonName"
+                android:hint="Duffy Decora"
+                android:padding="22sp"
+                android:textColor="#373737"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/editetxtvieiw_background"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+            <TextView
+                android:id="@+id/emaildtextView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/textcolors"
+                android:layout_marginLeft="41sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName2"/>
+
+
+            <EditText
+                android:id="@+id/editTextTextPersonemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6sp"
+                android:inputType="textPersonName"
+                android:hint="sample@email.com"
+                android:padding="22sp"
+                android:textColor="@color/textcolors"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/editetxtvieiw_background"
+                app:layout_constraintTop_toBottomOf="@+id/emaildtextView9" />
+
+
+
+
+            <TextView
+                android:id="@+id/passwordtextView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/textcolors"
+                android:layout_marginLeft="41sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/editTextTextPersonemail"/>
+
+
+            <EditText
+                android:id="@+id/editTextTextPersonPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6sp"
+                android:inputType="textPersonName"
+                android:hint="*****"
+                android:padding="22sp"
+                android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"
+                android:textColor="@color/textcolors"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/editetxtvieiw_background"
+                app:layout_constraintTop_toBottomOf="@+id/passwordtextView9" />
+
+            <TextView
+                android:id="@+id/editTextTextPersonsignin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25sp"
+                android:inputType="textPersonName"
+                android:text="Register"
+                android:padding="22sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/textcolors"
+                android:layout_marginLeft="30sp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/sign_background"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonPassword" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don’t have an account?  "
+                android:layout_marginTop="8sp"
+                android:textSize="15dp"
+                app:layout_constraintRight_toLeftOf="@+id/textView11"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonsignin"
+                app:layout_constraintLeft_toLeftOf="@+id/editTextTextPersonsignin" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign In"
+                android:layout_marginTop="8sp"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                app:layout_constraintLeft_toRightOf="@+id/textView10"
+                app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonsignin"
+                app:layout_constraintStart_toEndOf="@+id/textView10"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonsignin" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/textcolors"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Access account"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView12"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

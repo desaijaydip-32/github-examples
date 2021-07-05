@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/ic_imgview"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_popcorn"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/customTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="customtexrview"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="34dp"
+        app:layout_constraintTop_toBottomOf="@id/ic_imgview"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/customSubTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="customtexrview"
+        android:textSize="14sp"
+        android:textColor="#838383"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/customTextView"
+        android:textAlignment="center"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

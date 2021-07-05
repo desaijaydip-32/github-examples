@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:paddingBottom="65dp">
+    android:paddingBottom="100dp">
 
     <ImageView
         android:id="@+id/imageView31"
@@ -55,6 +55,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
+        app:tabIndicator="@null"
+        android:background="@android:color/transparent"
         android:layout_marginLeft="15sp"
         app:tabMode="scrollable"
         app:tabUnboundedRipple="true"
@@ -111,6 +113,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scaleType="fitXY"
+        android:visibility="gone"
         android:src="@drawable/menu_back_rectangle"
         app:layout_constraintBottom_toBottomOf="parent" />
 

@@ -11,6 +11,7 @@ import android.view.MenuItem;
 
 import com.example.foodfini.Fragment.HomeFragment;
 import com.example.foodfini.Fragment.MenuResFragment;
+import com.example.foodfini.Fragment.mapFragment;
 import com.example.foodfini.R;
 import com.example.foodfini.Fragment.SearchFragment;
 
@@ -20,16 +21,18 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MainActivity extends AppCompatActivity {
 
 
-     ActivityMainBinding binding;
+    BottomNavigationView navigationView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-       binding= ActivityMainBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+//       binding= ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(R.layout.activity_main);
+
+        navigationView = findViewById(R.id.bottomView);
         getSupportFragmentManager().beginTransaction().replace(R.id.container,new HomeFragment()).commit();
 
-        binding.bottomView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
@@ -40,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
                       case R.id.search :temp = new SearchFragment();
                           break;
                           case R.id.cart :temp = new MenuResFragment();
+                          break;
+                          case R.id.user :temp = new mapFragment();
                           break;
                   }
 

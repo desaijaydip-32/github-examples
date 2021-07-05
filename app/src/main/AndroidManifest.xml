@@ -9,21 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodFini">
-        <activity
-            android:name=".Activitity.SplashScreenActivity2"
-
-            android:screenOrientation="portrait">
-
+        <activity android:name=".Activitity.LoginMainActivity2"></activity>
+        <activity android:name=".Activitity.RegisterMainActivity" />
+        <activity android:name=".Activitity.spashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
+            android:name=".Activitity.SplashScreenActivity2"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".Activitity.MainActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

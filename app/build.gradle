@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.foodfini"
-        minSdkVersion 18
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -16,6 +16,9 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    buildFeatures {
+        viewBinding true
+    }
     buildFeatures {
         viewBinding true
     }
