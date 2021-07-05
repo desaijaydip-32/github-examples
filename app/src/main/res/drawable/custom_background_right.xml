@@ -4,4 +4,5 @@
 
     <padding android:top="20dp" android:bottom="20dp" android:right="20dp" android:left="20dp"/>
     <solid android:color="#47B782"/>
+    <size android:height="40dp" android:width="40dp"/>
 </shape>

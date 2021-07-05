@@ -5,15 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
+    android:background="#E5E5E5"
     android:paddingBottom="100dp">
 
     <ImageView
         android:id="@+id/imageView31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:layout_marginLeft="20dp"
         android:padding="20dp"
-        android:layout_marginTop="20dp"
+        android:background="@drawable/background"
+        android:layout_marginTop="60dp"
         android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,15 +25,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Westway"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/imageView32"
         app:layout_constraintStart_toEndOf="@+id/imageView31"
         app:layout_constraintTop_toTopOf="@+id/imageView31" />
 
     <ImageView
         android:id="@+id/imageView32"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:padding="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/background"
         android:src="@drawable/ic_setting"
         app:layout_constraintBottom_toBottomOf="@+id/imageView31"
         app:layout_constraintEnd_toEndOf="parent"

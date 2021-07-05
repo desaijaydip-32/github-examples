@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
@@ -39,7 +40,6 @@
         android:layout_height="wrap_content"
         android:text="4.6 • "
         android:textSize="12sp"
-
         app:layout_constraintBottom_toBottomOf="@+id/startImgView"
         app:layout_constraintStart_toEndOf="@id/startImgView"
         app:layout_constraintTop_toTopOf="@id/startImgView" />
@@ -65,6 +65,18 @@
         app:layout_constraintBottom_toBottomOf="@+id/watchImgView"
         app:layout_constraintStart_toEndOf="@id/watchImgView"
         app:layout_constraintTop_toTopOf="@id/watchImgView" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50%"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:background="@drawable/cutom_offer_shape"
+        app:layout_constraintStart_toStartOf="@+id/c_img"
+        app:layout_constraintBottom_toBottomOf="@+id/c_img"
+       />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

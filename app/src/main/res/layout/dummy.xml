@@ -28,11 +28,14 @@
 
         <TextView
             android:id="@+id/textView7"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sucessfully added to cart"
             android:textColor="@color/textcolor"
             android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
             android:layout_marginTop="20dp"
             app:layout_constraintBottom_toTopOf="@+id/orderTextView"
             app:layout_constraintEnd_toEndOf="@+id/imageView5"

@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.foodfini.Adapter.HomeAdapter;
-import com.example.foodfini.Fragment.menuDetailsFragment;
 import com.example.foodfini.Model.HomeModel;
 import com.example.foodfini.R;
 
@@ -39,10 +38,10 @@ public class SearchFragment extends Fragment {
 
         homeModel = new ArrayList<>();
 
-        homeModel.add(new HomeModel(R.drawable.img_one,"Wastway"));
-        homeModel.add(new HomeModel(R.drawable.img_two,"Fortune"));
-        homeModel.add(new HomeModel(R.drawable.img_three,"Moonland"));
-        homeModel.add(new HomeModel(R.drawable.img_four,"Starfish"));
+        homeModel.add(new HomeModel(R.drawable.img_one, "Wastway", "50%"));
+        homeModel.add(new HomeModel(R.drawable.img_two, "Fortune",""));
+        homeModel.add(new HomeModel(R.drawable.img_three, "Moonland",""));
+        homeModel.add(new HomeModel(R.drawable.img_four, "Starfish",""));
 
 
         nearrestRecycclerview =view.findViewById(R.id.restorrent1RecyclerView);

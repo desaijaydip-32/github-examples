@@ -15,7 +15,7 @@ import com.example.foodfini.Fragment.mapFragment;
 import com.example.foodfini.R;
 import com.example.foodfini.Fragment.SearchFragment;
 
-import com.example.foodfini.databinding.ActivityMainBinding;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {

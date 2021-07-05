@@ -36,9 +36,26 @@ public class HomeAdapter  extends  RecyclerView.Adapter<HomeAdapter.MyViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+        HomeModel model = homeModel.get(position);
+
 
    holder.c_imgview.setImageResource(homeModel.get(position).getImg());
    holder.item_name.setText(homeModel.get(position).getItemname());
+
+
+
+   if(model.getS()!=""){
+        holder.offerTexView.setVisibility(View.VISIBLE);
+
+   }
+   else {
+       holder.offerTexView.setVisibility(View.GONE);
+
+   }
+
+   holder.offerTexView.setText(homeModel.get(position).getS());
+
+
 
 
    holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -60,10 +77,13 @@ public class HomeAdapter  extends  RecyclerView.Adapter<HomeAdapter.MyViewHolder
 
         ImageView c_imgview;
         TextView  item_name;
+
+        TextView offerTexView;
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             c_imgview = itemView.findViewById(R.id.c_img);
             item_name = itemView.findViewById(R.id.itemNameTextView);
+            offerTexView= itemView.findViewById(R.id.textView22);
         }
     }
 

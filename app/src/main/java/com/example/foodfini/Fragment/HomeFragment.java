@@ -37,10 +37,10 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
            homeModel = new ArrayList<>();
 
-           homeModel.add(new HomeModel(R.drawable.img_one,"Wastway"));
-           homeModel.add(new HomeModel(R.drawable.img_two,"Fortune"));
-           homeModel.add(new HomeModel(R.drawable.img_three,"Moonland"));
-           homeModel.add(new HomeModel(R.drawable.img_four,"Starfish"));
+           homeModel.add(new HomeModel(R.drawable.img_one,"Wastway", "50%"));
+           homeModel.add(new HomeModel(R.drawable.img_two,"Fortune", ""));
+           homeModel.add(new HomeModel(R.drawable.img_three,"Moonland", ""));
+           homeModel.add(new HomeModel(R.drawable.img_four,"Starfish", ""));
 
 
         View view= inflater.inflate(R.layout.fragment_home, container, false);
@@ -53,7 +53,7 @@ public class HomeFragment extends Fragment {
         nrecyclerView.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL, false));
         nrecyclerView.setAdapter(new HomeAdapter(getContext(), homeModel, new HomeAdapter.ShareData() {
             @Override
-            public void shareData(int itmeImg, String itemName) {
+            public void shareData(int itmeImg , String itemName) {
 
                 Bundle bundle = new Bundle();
                 bundle.putInt("imgview", itmeImg);

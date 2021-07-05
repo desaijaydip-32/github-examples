@@ -8,7 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="customcolor">#373737</color>
-    <color name="selectorcolor">#E8E4E4</color>
+
+
+    <color name="selectorcolor">#FFFFFFFF</color>
     <color name="unselectorcolor">#040000</color>
     <color name="textcolor">#6DC54A</color>
     <color name="moreinfo">#FF7000</color>
@@ -19,7 +21,16 @@
     <color name="textcolors" >#373737</color>
 
 
+    <color name="imgcolor" >#FFD200</color>
+
+
+    <color name="imgcolornotselected" >#FFFFFFFF</color>
+
 
     <color name="titlebackgroundcolor">#0000AA</color>
+
+
+
+
 </resources>
 

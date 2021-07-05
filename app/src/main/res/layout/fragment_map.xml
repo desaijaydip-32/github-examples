@@ -38,9 +38,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="104dp"
-        android:text="TextView"
+        android:text="Delivery time"
         android:textSize="14sp"
-android:layout_marginLeft="32dp"
+        android:layout_marginLeft="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img" />
 
@@ -52,7 +52,7 @@ android:layout_marginLeft="32dp"
         android:layout_marginTop="5dp"
 
         app:layout_constraintStart_toStartOf="@+id/textView14"
-        android:src="@drawable/ic_watch" />
+        android:src="@drawable/watch__ic" />
 
     <TextView
         android:id="@+id/textView15"
@@ -61,7 +61,7 @@ android:layout_marginLeft="32dp"
         android:text="20 Min"
         android:textSize="20dp"
         android:textStyle="bold"
-        android:layout_marginLeft="5sp"
+        android:layout_marginLeft="10sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintStart_toEndOf="@+id/imageView6"
         app:layout_constraintTop_toTopOf="@+id/imageView6" />
@@ -113,7 +113,7 @@ android:layout_marginLeft="32dp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView17"
-        android:src="@drawable/ic_right"
+        android:src="@drawable/ic_right_map"
         android:layout_marginTop="40dp"
         android:background="@drawable/custom_background_right"
         android:layout_marginLeft="32sp"/>
@@ -132,18 +132,17 @@ android:layout_marginLeft="32dp"
         android:layout_marginTop="25sp"
         android:background="@drawable/custom_background_right"
         app:layout_constraintTop_toBottomOf="@+id/view2"
-       android:src="@drawable/ic_right" />
+       android:src="@drawable/ic_right_map" />
 
     <View
         android:id="@+id/view2"
         app:layout_constraintTop_toBottomOf="@+id/imageView9"
-        android:layout_width="255dp"
-        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:layout_height="1dp"
         android:layout_marginTop="25sp"
-        android:background="#6E80B0"
+        android:background="@color/customcolor"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="@+id/textView18"
-
+        app:layout_constraintStart_toStartOf="@+id/textView18"
         android:layout_marginRight="30dp"
 
 
@@ -167,9 +166,9 @@ android:layout_marginLeft="32dp"
     <View
         android:id="@+id/view3"
         app:layout_constraintTop_toBottomOf="@+id/imageView10"
-        android:layout_width="244dp"
-        android:layout_height="wrap_content"
-        android:background="#6E80B0"
+        android:layout_width="240dp"
+        android:layout_height="1dp"
+        android:background="@color/customcolor"
         android:layout_marginTop="25sp"
         app:layout_constraintStart_toStartOf="@+id/textView19"
         />
@@ -209,6 +208,37 @@ android:layout_marginLeft="32dp"
         android:layout_marginLeft="25dp"
         app:layout_constraintStart_toEndOf="@+id/imageView11"
         app:layout_constraintTop_toTopOf="@+id/imageView11" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your order has been Confirmed"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/customcolor"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/customcolor"
+        android:text="Hang on! Your food is on the way "
+        app:layout_constraintStart_toStartOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/customcolor"
+        android:text="Your order has been prepared"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
