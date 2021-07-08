@@ -4,4 +4,6 @@
     <item android:state_selected="true" android:drawable="@drawable/bottom_shape_rectangle"/>
     <item android:drawable="@color/white"/>
 
+
+
 </selector>

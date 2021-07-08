@@ -93,6 +93,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="30dp"
         android:text="@string/westwaytextname"
+            android:textStyle="bold"
+            android:fontFamily="@font/regular"
             android:layout_marginTop="15dp"
         android:textColor="#373737"
         android:textSize="30sp"
@@ -104,6 +106,7 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="10dp"
         android:text="More info"
+        android:textStyle="normal"
         android:textColor="@color/moreinfo"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@id/menuitelTextView"
@@ -126,7 +129,7 @@
         android:layout_height="wrap_content"
         android:text="4.6 • "
         android:textSize="12sp"
-
+       android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/startImgView"
         app:layout_constraintStart_toEndOf="@id/startImgView"
         app:layout_constraintTop_toTopOf="@id/startImgView" />
@@ -149,6 +152,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="15sp"
+        android:textColor="#838383"
         android:text="@string/_15_mintextname"
         app:layout_constraintBottom_toBottomOf="@+id/watchImgView"
         app:layout_constraintStart_toEndOf="@id/watchImgView"
@@ -166,6 +170,7 @@
                 android:text="Healthy eating means eating a variety of foods that give you the nutrients you need to maintain your health, feel good, and have energy."
                 android:textColor="#838383"
                 android:textSize="15sp"
+                android:fontFamily="@font/medium"
                 app:layout_constraintTop_toBottomOf="@id/startImgView" />
 
             <TextView
@@ -177,6 +182,7 @@
                 android:text="Westway Food Menu"
                 android:textColor="#373737"
                 android:textSize="18sp"
+                android:fontFamily="@font/medium"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/desTextView" />
 
@@ -189,6 +195,7 @@
                 android:layout_marginStart="20sp"
                 android:layout_marginTop="20dp"
                 android:padding="2dp"
+
                 android:background="@android:color/transparent"
                 app:layout_constraintTop_toBottomOf="@id/foodShowTextView"
                 app:tabBackground="@drawable/tab_bg"
@@ -209,7 +216,6 @@
                 <com.google.android.material.tabs.TabItem
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:text="Vag" />
 
                 <com.google.android.material.tabs.TabItem
@@ -235,6 +241,7 @@
                 android:textColor="@color/customcolor"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                android:fontFamily="@font/medium"
                 app:layout_constraintStart_toStartOf="@id/menutabLayout"
                 app:layout_constraintTop_toBottomOf="@id/menutabLayout" />
 

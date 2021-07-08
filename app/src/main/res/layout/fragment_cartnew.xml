@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".Fragment.CartnewFragment"
+    android:background="#F6F6F6"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -25,6 +26,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cart"
+        android:textColor="@color/textcolors"
+        android:fontFamily="@font/medium"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imgBack"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,8 +60,9 @@
         android:layout_height="wrap_content"
         android:text="Deliver to"
         android:textSize="14sp"
+        android:fontFamily="@font/regular"
         android:layout_marginLeft="15dp"
-        android:textColor="#373737"
+        android:textColor="@color/textcolors"
         app:layout_constraintTop_toTopOf="@id/ic_loc"
         app:layout_constraintStart_toEndOf="@+id/ic_loc"
         tools:layout_editor_absoluteY="127dp"/>
@@ -80,6 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="242 ST Marks Eve "
+        android:fontFamily="@font/medium"
         app:layout_constraintTop_toBottomOf="@id/textView"
         app:layout_constraintStart_toStartOf="@+id/textView"
         android:layout_marginTop="5dp"

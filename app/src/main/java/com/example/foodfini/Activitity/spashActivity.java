@@ -35,13 +35,14 @@ public class spashActivity extends AppCompatActivity {
         titletext = new String[]{"Choose A Tasty Dish","Easy Payment","Enjoy the Taste!"};
         subtitletext = new String[]{"Order anything you want from your Favorite restaurant.","Payment made easy through debit card, credit card  & more ways to pay for your food","Healthy eating means eating a variety of foods that give you the nutrients you need to maintain your health."};
 
-        spashBinding.viewpager.setAdapter(new CustomAdapter(spashActivity.this, img, titletext, subtitletext));
+
+        spashBinding.viewpager2.setAdapter(new CustomAdapter(spashActivity.this, img, titletext, subtitletext));
         addDot(0);
 
+        setNextItemView();
 
 
-
-        spashBinding.viewpager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        spashBinding.viewpager2.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int i, float v, int i1) {
 
@@ -57,16 +58,28 @@ public class spashActivity extends AppCompatActivity {
             }
         });
 
+//        spashBinding.nextbutton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//               startActivity(new Intent(spashActivity.this, RegisterMainActivity.class));
+//
+//
+//            }
+//        });
+    }
+
+
+
+
+    private void setNextItemView() {
+
         spashBinding.nextbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               startActivity(new Intent(spashActivity.this, RegisterMainActivity.class));
-
-
+                spashBinding.viewpager2.setCurrentItem(spashBinding.viewpager2.getCurrentItem() + 1);
             }
         });
     }
-
 
 
 
@@ -85,5 +98,29 @@ public class spashActivity extends AppCompatActivity {
         }
 
         dotstext[pos].setTextColor(getResources().getColor(R.color.darker_gray));
+
+
+        if (pos == 0) {
+
+        } else if (pos == 1) {
+
+        } else {
+
+            newActivitypage();
+
+        }
+
+    }
+
+
+    private void newActivitypage() {
+
+        spashBinding.nextbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(spashActivity.this, RegisterMainActivity.class));
+                finish();
+            }
+        });
     }
 }

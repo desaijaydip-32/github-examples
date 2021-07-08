@@ -31,6 +31,7 @@ public class RegisterMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(RegisterMainActivity.this, LoginMainActivity2.class));
+                finish();
             }
         });
 

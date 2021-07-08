@@ -69,6 +69,7 @@
                 android:layout_marginLeft="30sp"
                 android:layout_marginBottom="20dp"
                 android:padding="10dp"
+
                 android:layout_marginTop="30sp"
                 android:src="@drawable/ic_location"
                 app:layout_constraintStart_toStartOf="parent"
@@ -110,38 +111,36 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 app:tabIndicator="@null"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+                app:tabIconTint="@color/selector_tab"
                 android:layout_marginTop="32dp"
-                app:tabBackground="@drawable/tab_bg"
-                app:tabIconTint="@color/selectorcolors"
+                app:tabBackground="@drawable/selectedbgg"
                 android:background="@android:color/transparent"
-                android:paddingTop="5dp"
                 app:layout_constraintTop_toBottomOf="@id/locationTextView"
-                app:tabIndicatorColor="@android:color/transparent"
-                app:tabSelectedTextColor="@color/customcolor">
+                app:tabIndicatorColor="@android:color/transparent">
 
                 <com.google.android.material.tabs.TabItem
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:icon="@drawable/ic_fast_food"
-                    android:text="All" />
+                    android:icon="@drawable/ic_fast_food"                 />
 
                 <com.google.android.material.tabs.TabItem
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:icon="@drawable/ic_ion_pizza"
-                    android:text="Pizza" />
+                   />
 
                 <com.google.android.material.tabs.TabItem
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:icon="@drawable/ic_vector"
-                    android:text="Beverages" />
+                    />
 
                 <com.google.android.material.tabs.TabItem
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:icon="@drawable/ic_asian"
-                    android:text="asian" />
+                    android:icon="@drawable/ic_asian"/>
 
 
             </com.google.android.material.tabs.TabLayout>
@@ -183,7 +182,7 @@
                 android:id="@+id/populerrestorrent1RecyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="40dp"
                 app:layout_constraintTop_toBottomOf="@+id/populerResturentTextView" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,6 +19,8 @@
         android:id="@+id/itemNameTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/regular"
+        android:textColor="@color/textcolors"
         app:layout_constraintStart_toStartOf="@id/c_img"
         app:layout_constraintTop_toBottomOf="@id/c_img"
       android:text="Westway"
@@ -40,6 +42,7 @@
         android:layout_height="wrap_content"
         android:text="4.6 • "
         android:textSize="12sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/startImgView"
         app:layout_constraintStart_toEndOf="@id/startImgView"
         app:layout_constraintTop_toTopOf="@id/startImgView" />
@@ -61,6 +64,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="15 Min"
+        android:textColor="#838383"
+        android:fontFamily="@font/medium"
         android:layout_marginRight="15sp"
         app:layout_constraintBottom_toBottomOf="@+id/watchImgView"
         app:layout_constraintStart_toEndOf="@id/watchImgView"
@@ -72,11 +77,11 @@
         android:layout_height="wrap_content"
         android:text="50%"
         android:textSize="15dp"
+        android:textColor="@color/white"
         android:gravity="center"
         android:background="@drawable/cutom_offer_shape"
         app:layout_constraintStart_toStartOf="@+id/c_img"
-        app:layout_constraintBottom_toBottomOf="@+id/c_img"
-       />
+        app:layout_constraintBottom_toBottomOf="@+id/c_img"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

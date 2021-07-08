@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    tools:ignore="ExtraText">
+
+    <ImageView
+
+        android:id="@+id/imageViewfood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_bg"
+        android:padding="20dp"
+        app:tint="@drawable/tab_icon_bg"
+        android:src="@drawable/ic_pizza_new"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <TextView
+        android:id="@+id/alltextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/regular"
+        android:text="pizza"
+        android:textColor="#838383"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@id/imageViewfood"
+        app:layout_constraintStart_toStartOf="@id/imageViewfood"
+        app:layout_constraintTop_toBottomOf="@id/imageViewfood" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

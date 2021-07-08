@@ -26,6 +26,8 @@
         android:layout_height="wrap_content"
         android:text="Westway"
         android:textSize="20sp"
+        android:textColor="#838383"
+        android:fontFamily="@font/medium"
         app:layout_constraintEnd_toStartOf="@+id/imageView32"
         app:layout_constraintStart_toEndOf="@+id/imageView31"
         app:layout_constraintTop_toTopOf="@+id/imageView31" />
@@ -49,6 +51,8 @@
         android:text="Menu"
         android:textSize="30dp"
         android:textStyle="bold"
+        android:fontFamily="@font/medium"
+        android:textColor="@color/textcolors"
         app:layout_constraintBottom_toBottomOf="@+id/imageView31"
         app:layout_constraintEnd_toEndOf="@+id/textView36"
         app:layout_constraintStart_toStartOf="@+id/textView36"

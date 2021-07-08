@@ -30,9 +30,11 @@
             android:id="@+id/textView24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="15dp"
             android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView29"
+            android:textColor="@color/textcolors"
+            android:fontFamily="@font/regular"
+            android:layout_marginTop="20dp"
             app:layout_constraintStart_toEndOf="@+id/imageView29"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -53,6 +55,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:text="In Pizza Mania"
+            android:textColor="#838383"
+            android:fontFamily="@font/regular"
             app:layout_constraintStart_toStartOf="@+id/textView24"
             app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
@@ -61,6 +65,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Price. "
+            android:fontFamily="@font/medium"
+            android:textColor="@color/textcolors"
             app:layout_constraintStart_toStartOf="@+id/textView24"
             app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
@@ -69,6 +75,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="155.76"
+            android:fontFamily="@font/medium"
+            android:textColor="@color/textcolors"
             app:layout_constraintStart_toEndOf="@+id/textView33"
             app:layout_constraintTop_toTopOf="@+id/textView33"
             tools:layout_editor_absoluteY="513dp" />

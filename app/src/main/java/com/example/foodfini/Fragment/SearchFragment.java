@@ -14,15 +14,20 @@ import android.view.ViewGroup;
 import com.example.foodfini.Adapter.HomeAdapter;
 import com.example.foodfini.Model.HomeModel;
 import com.example.foodfini.R;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 
 
-public class SearchFragment extends Fragment {
+public class    SearchFragment extends Fragment {
 
 
     ArrayList<HomeModel> homeModel;
+
+    TabLayout tab;
      RecyclerView nearrestRecycclerview, populerRecycclerView;
+
+     TabLayout tabLayout;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +41,25 @@ public class SearchFragment extends Fragment {
 
         View view= inflater.inflate(R.layout.fragment_search, container, false);
 
+       //  tabLayout = view.findViewById(R.id.tab);
+
+//
+//        tabLayout.getTabAt(0).setCustomView(R.layout.food);
+//        tabLayout.getTabAt(1).setCustomView(R.layout.food);
+//        tabLayout.getTabAt(2).setCustomView(R.layout.food);
+
+//
+//        tabLayout.getTabAt(0).setText("all");
+//        tabLayout.getTabAt(1).setText("all");
+//        tabLayout.getTabAt(2).setText("all");
+//
+
         homeModel = new ArrayList<>();
+
+
+
+
+
 
         homeModel.add(new HomeModel(R.drawable.img_one, "Wastway", "50%"));
         homeModel.add(new HomeModel(R.drawable.img_two, "Fortune",""));

@@ -50,7 +50,7 @@ public class menuAdapter extends  RecyclerView.Adapter<menuAdapter.MyViewHolder>
             super(itemView);
 
            itemImg = itemView.findViewById(R.id.itemimageView);
-           textView = itemView.findViewById(R.id.nametextView26);
+           textView = itemView.findViewById(R.id.textView24);
         }
     }
 }
