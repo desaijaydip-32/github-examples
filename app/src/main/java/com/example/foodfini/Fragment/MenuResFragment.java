@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
+import com.example.foodfini.Activitity.MainActivity;
 import com.example.foodfini.Adapter.CartAdapter;
 import com.example.foodfini.Fragment.CartnewFragment;
 import com.example.foodfini.Model.MenuModel;
@@ -67,7 +68,7 @@ public class MenuResFragment extends Fragment {
                 checkview = view1.findViewById(R.id.orderTextView);
                 alertDialog.setView(view1);
 
-                 checkview.setOnClickListener(new View.OnClickListener() {
+                checkview.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         FragmentManager manager = getFragmentManager();
@@ -83,5 +84,17 @@ public class MenuResFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(new CartAdapter(getContext(), arrayList, cntTextView, backimgview));
         return view;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        ((MainActivity)getActivity()).setnavitem(2);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+
     }
 }

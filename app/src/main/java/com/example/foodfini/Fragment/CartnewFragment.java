@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.foodfini.Activitity.MainActivity;
 import com.example.foodfini.Model.CartItemModel;
 import com.example.foodfini.Adapter.CartItemViewAdapter;
 import com.example.foodfini.R;
@@ -85,5 +86,13 @@ public class CartnewFragment extends Fragment {
 
 
         return  view;
+    }
+
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        ((MainActivity)getActivity()).setnavitem(3);
     }
 }

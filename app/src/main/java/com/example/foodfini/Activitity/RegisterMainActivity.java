@@ -8,11 +8,14 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.foodfini.R;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterMainActivity extends AppCompatActivity {
 
 
     TextView logintextview,registertextview ;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +27,7 @@ public class RegisterMainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(RegisterMainActivity.this, MainActivity.class));
+                finish();
             }
         });
 

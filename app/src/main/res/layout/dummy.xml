@@ -45,7 +45,6 @@
             tools:ignore="NotSibling" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
         <TextView
             android:id="@+id/orderTextView"
             android:layout_width="wrap_content"

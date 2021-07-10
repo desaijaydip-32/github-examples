@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
+import com.example.foodfini.Activitity.MainActivity;
 import com.example.foodfini.R;
 import com.example.foodfini.databinding.FragmentHomeBinding;
 
@@ -37,8 +38,14 @@ public class HomeFragment extends Fragment {
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View view = binding.getRoot();
-
         return view;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        ((MainActivity)getActivity()).setnavitem(0);
     }
 
     @Override
@@ -65,5 +72,10 @@ public class HomeFragment extends Fragment {
         binding.tab.getTabAt(3).setCustomView(R.layout.asian);
 
 
+
+
+
     }
+
+
 }
